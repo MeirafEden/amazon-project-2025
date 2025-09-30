@@ -1,15 +1,35 @@
+import React, { useContext, useEffect } from "react";
+import { DataContext } from "./Components/DataProvider/DataProvider";
+import Routing from "./Router.js";
+import {auth} from "./Utility/firebase.js";
+import{Type} from "./Utility/action.type.js";
 
-import './App.css';
 
 function App() {
-  return (
-   <div className="APP">
+  const [{user}, dispatch] = useContext(DataContext)
+  // return (
+    useEffect(()=>{
+ auth.onAuthStateChanged((authUser) => {
+  if(authUser){
+console.log(authUser);
+dispatch({
+  type:Type.SET_USER,
+  user:authUser
+})
 
-    <h1> Welcome Amazon</h1>
+  }else {
+dispatch({
+  type:Type.SET_USER,
+  user:null,
+  });
+    }
+    });
+   
+    }, []);
 
+   return <Routing />;
 
-   </div>
-  );
-}
-
+  }
 export default App;
+
+

@@ -1,0 +1,87 @@
+.container{
+background-color: lightgrey;
+padding: 30px;
+}
+
+.order_container {
+  /* max-width: 1200px;
+  margin: 0 auto; */
+  padding: 21px;
+  min-height: 80vh; /* ensures full page height under header */
+  background-color: white; /* light background like Amazon orders page */
+  /* border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
+}
+.orders_container h2{
+border-bottom: 3px solid var(--primary-color);
+padding: 21px;
+}
+
+.order_header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.order_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order_item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order_item h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.order_item p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.order_actions {
+  display: flex;
+  gap: 10px;
+}
+
+.order_button {
+  background-color: #febd69;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.order_button:hover {
+  background-color: #f3a847;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .order_item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order_actions {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+}

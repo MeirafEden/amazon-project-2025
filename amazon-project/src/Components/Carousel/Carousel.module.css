@@ -1,0 +1,50 @@
+.carousel_wrapper {
+  margin-top: 1px; /* to avoid overlapping fixed header */
+}
+
+/* .carousel_section {
+  margin-bottom: 30px;
+  position: relative; 
+}  */
+
+/* .category_title {
+  color: white;
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 10px;
+} */
+
+.carousel_container {
+  position: relative;
+}
+
+/* Hero gradient overlay */
+.hero_img{
+ position: relative; 
+}
+
+.hero_img::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 300px; /* adjust gradient height */
+  background: linear-gradient(
+    to bottom,
+    rgba(225, 225, 255, 0),
+    rgba(255, 255, 255)
+  );
+  /* allows clicks on carousel */
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .category_title {
+    font-size: 18px;
+  }
+
+  .hero_img {
+    height: 151px;
+  }
+}

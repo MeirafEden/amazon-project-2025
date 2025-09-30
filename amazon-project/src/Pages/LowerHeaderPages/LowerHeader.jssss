@@ -1,0 +1,21 @@
+import { Link } from "react-router-dom";
+
+<div className="lowerHeader">
+  <Link to="/amazon-haul">Amazon Haul</Link>
+  <Link to="/medical-care">Medical Care</Link>
+  <Link to="/best-seller">Best Seller</Link>
+  <Link to="/amazon-basics">Amazon Basics</Link>
+  <Link to="/new-releases">New Releases</Link>
+  <Link to="/groceries">Groceries</Link>
+  <Link to="/prime">Prime</Link>
+  <Link to="/todays-deals">Today's Deals</Link>
+  <Link to="/registry">Registry</Link>
+  <Link to="/customer-service">Customer Service</Link>
+  <Link to="/gift-cards">Gift Cards</Link>
+  <Link to="/smart-home">Smart Home</Link>
+  <Link to="/sports-outdoors">Sports & Outdoors</Link>
+  <Link to="/music">Music</Link>
+  <Link to="/pharmacy">Pharmacy</Link>
+  <Link to="/shop-by-interest">Shop By Interest</Link>
+  <Link to="/amazon-home">Amazon Home</Link>
+</div>
