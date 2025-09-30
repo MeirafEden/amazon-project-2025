@@ -18,10 +18,7 @@ function Cart() {
     0
   );
 
-  //  const total = basket.reduce((amount, item) => {
-  //    return amount + item.price * item.amount;
-  //  }, 0);
-
+  
   // ✅ Increment quantity (re-add same item)
   const increment = (item) => {
     dispatch({
@@ -45,30 +42,7 @@ function Cart() {
     });
   };
 
-  // ✅ Increment quantity
-  // const increment = (item) => {
-  //   dispatch({
-  //     type: Type.ADD_TO_BASKET,
-  //     // Only send product data (no amount!)
-  //     item: {
-  //       id: item.id,
-  //       title: item.title,
-  //       price: item.price,
-  //       image: item.image,
-  //       description: item.description,
-  //       rating: item.rating,
-  //     },
-  //   });
-  // };
-
-  // // ✅ Decrement quantity
-  // const decrement = (item) => {
-  //   dispatch({
-  //     type: Type.REMOVE_FROM_BASKET,
-  //     id: item.id,
-  //   });
-  // };
-
+ 
 
   return (
     <LayOut>

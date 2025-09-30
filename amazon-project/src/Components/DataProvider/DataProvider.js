@@ -1,13 +1,3 @@
-// // DataProvider.js
-// import React, { createContext, useReducer } from "react";
-
-// export const DataContext = createContext();
-
-// export const DataProvider = ({ children, reducer, initialState }) => {
-//   const value = useReducer(reducer, initialState); // must return [state, dispatch]
-//   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;
-// };
-
 
 import React, { createContext, useReducer } from "react";
 
