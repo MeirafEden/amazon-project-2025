@@ -1,0 +1,81 @@
+.productCard {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.productCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.flexed {
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Image Section */
+.imageWrapper {
+  flex: 0 0 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper img {
+  max-width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+/* Info Section */
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #B12704; /* Amazon’s price red */
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+/* Button */
+.addBtn {
+  background: #FFD814; /* Amazon yellow */
+  border: 1px solid #FCD200;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  width: fit-content;
+  transition: background 0.2s ease;
+}
+
+.addBtn:hover {
+  background: #F7CA00;
+}

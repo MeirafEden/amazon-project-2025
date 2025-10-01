@@ -1,0 +1,43 @@
+.product_flexed {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  height: auto;
+  box-shadow: none;
+  padding: 20px;
+}
+
+.product_flexed img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.product_flexed h3 {
+  margin: 0 0 10px;
+}
+
+.product_flexed .button {
+  display: block;
+  position: static;
+  width: 150px;
+  margin: 20px 0 0;
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 768px) {
+  .product_flexed {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .product_flexed img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .product_flexed .button {
+    width: 80%;
+  }
+}

@@ -1,0 +1,37 @@
+  .lower_header {
+  background-color: #232f3e;
+  color: white;
+  padding: 8px 15px;
+}
+
+.nav_list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 35px;
+}
+
+.nav_item {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav_item:hover {
+  border: 1px solid white;
+}
+
+.nav_item a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav_item a:hover {
+  text-decoration: underline;
+}
+
+
