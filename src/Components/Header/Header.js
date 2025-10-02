@@ -4,7 +4,9 @@ import classes from "./Header.module.css";
 import { DataContext } from "../DataProvider/DataProvider";
 import { Type } from "../../Utility/action.type";
 import { IoMdArrowDropdown } from "react-icons/io";
-import { FaShoppingCart, FaHeart } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
+import { IoLocationOutline } from "react-icons/io5";
+import { IoMdSearch } from "react-icons/io";
 
 function Header() {
   const [{ basket, user }, dispatch] = useContext(DataContext);
@@ -29,12 +31,12 @@ function Header() {
         <div className={classes.logo_favorite}>
           <Link to="/">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+              src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
               alt="Amazon"
               className={classes.main_logo}
             />
           </Link>
-          <FaHeart className={classes.heart_icon} />
+          <IoLocationOutline className={classes.heart_icon} />
         </div>
 
         {/* Delivery */}
@@ -54,7 +56,9 @@ function Header() {
             <option>Clothing</option>
           </select>
           <input type="text" placeholder="Search Amazon" />
-          <button className={classes.search_btn}>🔍</button>
+          <button className={classes.search_btn}>
+            <IoMdSearch />
+          </button>
         </div>
 
         {/* Language dropdown with US flag */}
@@ -77,7 +81,7 @@ function Header() {
             <div className={classes.dropdown}>
               <p onClick={() => toggleLang("EN")}>English</p>
               <p onClick={() => toggleLang("AM")}>Amharic</p>
-              <p onClick={() => toggleLang("ES")}>Español</p>
+              <p onClick={() => toggleLang("ES")}>Spañish</p>
             </div>
           )}
         </div>
@@ -105,7 +109,7 @@ function Header() {
               ) : (
                 <>
                   <p>
-                    <Link to="/login">Sign In</Link>
+                    <Link to="/auth">Sign In</Link>
                   </p>
                   <p>Your Orders</p>
                 </>
@@ -124,7 +128,7 @@ function Header() {
 
         {/* Basket */}
         <Link to="/cart" className={classes.cart}>
-          <FaShoppingCart size={28} />
+          <FaShoppingCart size={30} />
           <span className={classes.cart_count}>{basket?.length || 0}</span>
         </Link>
       </div>
